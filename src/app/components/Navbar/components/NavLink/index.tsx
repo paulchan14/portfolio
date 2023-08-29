@@ -1,18 +1,28 @@
+"use client";
+
+import { usePathname } from "next/navigation";
 import Link, { LinkProps } from "next/link";
 import { FC, ReactNode } from "react";
 
 type NavLinkProps = LinkProps & {
 	children: ReactNode;
 };
-const NavLink: FC<NavLinkProps> = (props) => {
+const NavLink: FC<NavLinkProps> = ({ href, children, ...props }) => {
+	const currentRoute = usePathname();
+	const isCurrentPage = href === currentRoute ? true : false;
+
 	return (
 		<li>
 			<Link
-				className={
-					"focus:border-2 hover:border-2 focus:border-vivenna hover:border-vivenna p-3 focus:rounded-3xl hover:rounded-3xl focus:outline-none focus:-m-[2px] hover:-m-[2px]"
-				}
+				aria-current={isCurrentPage}
+				className={`focus:border-2 hover:border-2 focus:border-hoid hover:border-hoid p-3 rounded-3xl focus:outline-none focus:-m-[2px] hover:-m-[2px] ${
+					isCurrentPage ? "bg-vivenna" : ""
+				}`}
+				href={href}
 				{...props}
-			/>
+			>
+				{children}
+			</Link>
 		</li>
 	);
 };

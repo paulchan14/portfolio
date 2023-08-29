@@ -1,3 +1,5 @@
+import AppPage from "./AppPage";
 import Navbar from "./Navbar";
+import PageHeader from "./PageHeader";
 
-export { Navbar };
+export { AppPage, Navbar, PageHeader };
