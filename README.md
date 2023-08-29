@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+# Portfolio
+
+I decided to build my portfolio from scratch as an opportunity to build my NextJS skills, as well as work on other tools I've been interested in learning. This will be a work in progress, but I'm happy to share my learnings.
+
 ## Getting Started
 
 First, run the development server:
