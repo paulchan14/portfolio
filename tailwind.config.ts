@@ -13,6 +13,7 @@ const config: Config = {
 			vasher: "#5E5E5E",
 			lightsong: "#CFC2C4",
 			vivenna: "#EE376B",
+			siri: "#EE265B",
 		},
 	},
 	plugins: [],
