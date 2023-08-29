@@ -1,8 +1,8 @@
-import { Navbar } from "./components";
+import { AppPage, PageHeader } from "#components";
 export default function Portfolio() {
 	return (
-		<main className="flex min-h-screen min-w-screen flex-col items-center justify-between p-24 bg-nightblood">
-			<Navbar />
-		</main>
+		<AppPage>
+			<PageHeader title={"Projects"} subtitle={"Take a look at some of the example web applications I've built"} />
+		</AppPage>
 	);
 }
